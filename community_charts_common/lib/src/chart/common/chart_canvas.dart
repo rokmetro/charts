@@ -14,6 +14,7 @@
 // limitations under the License.
 
 import 'dart:math' show Point, Rectangle;
+import 'dart:ui';
 
 import '../../common/color.dart' show Color;
 import '../../common/graphics_factory.dart' show GraphicsFactory;
@@ -28,6 +29,8 @@ abstract class ChartCanvas {
   /// or null when we believe rendering is complete.
   set drawingView(String? viewName);
 
+  Canvas get canvas;
+  
   /// Renders a sector of a circle, with an optional hole in the center.
   ///
   /// [center] The x, y coordinates of the circle's center.
