@@ -18,7 +18,8 @@
 // EXCLUDE_FROM_GALLERY_DOCS_START
 import 'dart:math';
 // EXCLUDE_FROM_GALLERY_DOCS_END
-import 'package:charts_flutter/flutter.dart' as charts;
+import 'package:community_charts_flutter/community_charts_flutter.dart'
+    as charts;
 import 'package:flutter/material.dart';
 
 class GaugeChart extends StatelessWidget {
@@ -68,7 +69,7 @@ class GaugeChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new charts.PieChart(seriesList,
+    return new charts.PieChart<String>(seriesList,
         animate: animate,
         // Configure the width of the pie slices to 30px. The remaining space in
         // the chart will be left as a hole in the center. Adjust the start

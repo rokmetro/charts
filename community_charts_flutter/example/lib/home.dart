@@ -13,7 +13,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:charts_flutter/flutter.dart' as charts;
+import 'package:community_charts_flutter/community_charts_flutter.dart'
+    as charts;
 import 'package:flutter/material.dart';
 import 'dart:developer';
 import 'app_config.dart';
@@ -54,9 +55,7 @@ class Home extends StatelessWidget {
       {Key? key,
       this.showPerformanceOverlay = false,
       required this.onShowPerformanceOverlayChanged})
-      : super(key: key) {
-    assert(onShowPerformanceOverlayChanged != null);
-  }
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

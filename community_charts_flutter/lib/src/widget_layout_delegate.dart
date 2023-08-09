@@ -13,11 +13,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'dart:ui' show Offset;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:charts_common/common.dart' as common
+import 'package:community_charts_common/community_charts_common.dart' as common
     show BehaviorPosition, InsideJustification, OutsideJustification;
 
 import 'behaviors/chart_behavior.dart' show BuildableBehavior;

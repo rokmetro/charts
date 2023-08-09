@@ -15,7 +15,7 @@
 
 import 'package:flutter/widgets.dart' show AnimationController;
 
-import 'package:charts_common/common.dart' as common
+import 'package:community_charts_common/community_charts_common.dart' as common
     show BaseChart, ChartBehavior, InitialHintBehavior;
 import 'package:meta/meta.dart' show immutable;
 
@@ -77,8 +77,6 @@ class FlutterInitialHintBehavior<D> extends common.InitialHintBehavior<D>
   BaseChartState? _chartState;
 
   set chartState(BaseChartState chartState) {
-    assert(chartState != null);
-
     _chartState = chartState;
 
     _hintAnimator = chartState.getAnimationController(this);

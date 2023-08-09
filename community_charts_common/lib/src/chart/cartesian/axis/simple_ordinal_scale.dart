@@ -15,7 +15,7 @@
 
 import 'dart:math' show min, max;
 
-import 'package:charts_common/src/common/math.dart';
+import 'package:community_charts_common/src/common/math.dart';
 
 import 'ordinal_scale.dart' show OrdinalScale;
 import 'ordinal_scale_domain_info.dart' show OrdinalScaleDomainInfo;
@@ -91,7 +91,7 @@ class SimpleOrdinalScale implements OrdinalScale {
   double get domainStepSize => 1.0;
 
   @override
-  set rangeBandConfig(RangeBandConfig barGroupWidthConfig) {
+  set rangeBandConfig(RangeBandConfig? barGroupWidthConfig) {
     if (barGroupWidthConfig == null) {
       throw ArgumentError.notNull('RangeBandConfig must not be null.');
     }
@@ -296,7 +296,7 @@ class SimpleOrdinalScale implements OrdinalScale {
     // TODO: This currently works because range defaults to 0-1
     // This needs to be looked into further.
     var i = _domain.indexOf(domainValue);
-    if (i != null && range != null) {
+    if (i != null) {
       var domainPx = this[domainValue];
       if (domainPx < range.min) {
         return -1;

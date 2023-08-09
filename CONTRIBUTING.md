@@ -1,2 +1,3 @@
-This project is developed internally at Google and published for external
-consumption, external contributions unfortunately cannot be taken at this time.
+The original project is no longer maintained, and will not receive further updates.
+Community members interested in collaborating on this community-maintained fork can however create
+pull requests.

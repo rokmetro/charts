@@ -13,10 +13,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import 'package:charts_common/common.dart';
+import 'package:community_charts_common/community_charts_common.dart';
 import 'package:test/test.dart';
-import 'package:charts_common/src/data/graph_utils.dart';
-import 'package:charts_common/src/data/graph.dart' as graph_structure
+import 'package:community_charts_common/src/data/graph_utils.dart';
+import 'package:community_charts_common/src/data/graph.dart' as graph_structure
     show Node, Link, indexNotRelevant;
 
 class MyNode {
@@ -87,10 +87,10 @@ void main() {
           graph_structure.Node(myMockNodes[0]),
           graph_structure.Node(myMockNodes[1]),
           myMockLinks[0]);
-      var secondLink = graph_structure.Link<MyNode, MyLink>(
-          graph_structure.Node(myMockNodes[1]),
-          graph_structure.Node(myMockNodes[2]),
-          myMockLinks[1]);
+      // var secondLink = graph_structure.Link<MyNode, MyLink>(
+      //     graph_structure.Node(myMockNodes[1]),
+      //     graph_structure.Node(myMockNodes[2]),
+      //     myMockLinks[1]);
 
       expect(domainFn(firstLink, graph_structure.indexNotRelevant),
           getDomain(myMockLinks[0], graph_structure.indexNotRelevant));

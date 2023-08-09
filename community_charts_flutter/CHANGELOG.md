@@ -1,3 +1,14 @@
+# 1.0.1
+* Removed unused dependencies
+* Updated documentation urls
+
+# 1.0.0
+Initial fork from google/charts.
+
+* Migrated to null-safety.
+* Fixed tests to work with null-safety.
+* Applied latest flutter analyzer hints.
+
 # 0.12.0
 * Add functions to draw horizontal or vertical links onto the dart charts web canvas.
 * Add "preserveSelection" functionality to InitialSelection chart Behavior.
@@ -49,8 +60,8 @@ using the existing method.
 
 # 0.4.0
 * Fixed export file to export ChartsBehavior in the Flutter library instead of the one that resides
-in charts_common. The charts_common behavior should not be used except internally in the
-charts_flutter library. This is a breaking change if you are using charts_common behavior.
+in community_charts_common. The community_charts_common behavior should not be used except internally in the
+community_charts_flutter library. This is a breaking change if you are using community_charts_common behavior.
 * Declare compatibility with Dart 2.
 * BasicNumericTickFormatterSpec now takes in a callback instead of NumberFormat as the default
 constructor. Use named constructor withNumberFormat instead. This is a breaking change.
@@ -63,7 +74,7 @@ BarTargetLineRendererConfig<String>. This is a breaking change.
 * Simplified API by removing the requirement for specifying the datum type when creating a chart.
 For example, previously to construct a bar chart the syntax was 'new BarChart<MyDatumType>()'.
 The syntax is now cleaned up to be 'new BarChart()'. Please refer to the
-[online gallery](https://google.github.io/charts/flutter/gallery.html) for the correct syntax.
+[online gallery](https://juliansteenbakker.github.io/community_charts/flutter/gallery.html) for the correct syntax.
 * Added scatter plot charts
 * Added tap to hide for legends
 * Added support for rendering area skirts to line charts

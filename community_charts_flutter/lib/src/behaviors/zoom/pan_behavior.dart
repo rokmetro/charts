@@ -18,7 +18,7 @@ import 'dart:ui' show lerpDouble;
 
 import 'package:flutter/widgets.dart' show AnimationController;
 
-import 'package:charts_common/common.dart' as common
+import 'package:community_charts_common/community_charts_common.dart' as common
     show BaseChart, ChartBehavior, PanBehavior, PanningCompletedCallback;
 import 'package:meta/meta.dart' show immutable;
 
@@ -75,8 +75,6 @@ mixin FlutterPanBehaviorMixin<D> on common.PanBehavior<D>
   late BaseChartState _chartState;
 
   set chartState(BaseChartState chartState) {
-    assert(chartState != null);
-
     _chartState = chartState;
     _flingAnimator = chartState.getAnimationController(this);
     _flingAnimator?.addListener(_onFlingTick);

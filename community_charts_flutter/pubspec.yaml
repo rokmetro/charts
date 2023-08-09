@@ -1,34 +1,28 @@
-name: charts_flutter
-version: 0.12.0
-description: Material Design charting library for flutter.
-homepage: https://github.com/google/charts
+name: community_charts_flutter
+version: 1.0.1
+description: Material Design charting library for flutter. Forked from google/charts.
+repository: https://github.com/juliansteenbakker/community_charts
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
   flutter: '>=2.5.0'
 
 dependencies:
+  collection: ">=0.14.5 <2.0.0"
+  meta: ">=1.1.1 <2.0.0"
   # Pointing this to a local path allows for pointing to the latest code
   # in Github for open source development.
   #
-  # The pub version of charts_flutter will point to the pub version of charts_common.
+  # The pub version of community_charts_flutter will point to the pub version of community_charts_common.
   # The latest pub version is commented out and shown below as an example.
-  # charts_common: ^0.12.0
-  charts_common:
-    git:
-      url: https://github.com/rokmetro/charts.git
-      path: charts_common
-  collection: ^1.14.5
+  community_charts_common: ^1.0.1
+#  community_charts_common:
+#    path: ../community_charts_common/
   flutter:
     sdk: flutter
-  intl: ">=0.15.2 < 0.18.0"
-  logging: ^1.0.2
-  meta: ^1.1.1
-
 
 dev_dependencies:
-  mockito: ^5.0.0
-  build_runner: ^1.11.0
+  mockito: ^5.3.2
+  build_runner: ^2.3.3
   flutter_test:
     sdk: flutter
-  test: ^1.3.0

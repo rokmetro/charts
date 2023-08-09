@@ -1,3 +1,14 @@
+# 1.0.1
+* Updated intl dependency to support latest version
+* Removed unused dependencies
+
+# 1.0.0
+Initial fork from google/charts.
+
+* Updated dependencies to stable versions.
+* Apply dart suggestions and refactor code.
+* Migrate hashValues to Object.hash
+
 # 0.12.0
 * Expose `NumericScale`, `LinearScale` and `ScaleSpec`
 * Add functions to draw horizontal or vertical links.
@@ -62,7 +73,7 @@ using the existing method.
 * Simplified API by removing the requirement for specifying the datum type when creating a chart.
 For example, previously to construct a bar chart the syntax was 'new BarChart<MyDatumType>()'.
 The syntax is now cleaned up to be 'new BarChart()'. Please refer to the
-[online gallery](https://google.github.io/charts/flutter/gallery.html) for the correct syntax.
+[online gallery](https://juliansteenbakker.github.io/community_charts/flutter/gallery.html) for the correct syntax.
 * Added scatter plot charts
 * Added tap to hide for legends
 * Added support for rendering area skirts to line charts
